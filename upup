@@ -1,0 +1,36 @@
+cd 
+clear
+# using python script to check for dual entries
+echo Checking Repositories for dual entries
+python apt-remove-duplicate-source-entries.py
+
+
+echo PKGs Upgrade
+echo Clean Unhold update and upgrade 
+echo
+
+sudo apt-get autoremove
+echo Files removed
+echo
+
+sudo apt-get autoclean
+echo cleaned Ready			
+echo
+
+sudo apt-get update
+echo Update Ready
+echo
+
+sudo apt-get upgrade
+echo upgrade Ready
+echo
+
+sudo apt-get dist-upgrade	
+echo dist-upgrade Ready
+echo
+
+echo Ready
+echo Thankyou for using this script
+echo written by Des Scifo of Malta 
+echo
+
